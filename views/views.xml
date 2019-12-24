@@ -1,0 +1,24 @@
+<odoo>
+  <data>
+    
+    <record id="view_picking_form" model="ir.ui.view">
+          <field name="name">stock.picking.form</field>
+          <field name="model">stock.picking</field>
+          <field name="inherit_id" ref="stock.view_picking_form"/>
+          <field name="priority" eval ="8" />
+          <field name="arch" type="xml">
+              <xpath expr="//notebook/page[2]/field[3]/tree/field[@name='product_id']" position="after">
+                <field name="analytic_tag_ids" 
+                        groups="analytic.group_analytic_tags" 
+                        widget="many2many_tags" 
+                        />
+                <field name="bisnis" 
+                        groups="analytic.group_analytic_tags" 
+                        widget="many2many_tags" 
+                        />
+              </xpath>
+          </field>
+      </record>
+
+  </data>
+</odoo>
