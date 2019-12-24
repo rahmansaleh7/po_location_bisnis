@@ -9,7 +9,7 @@
           <field name="arch" type="xml">
               <xpath expr="//notebook/page[2]/field[3]/tree/field[@name='product_id']" position="after">
                  <field name="account_analytic_id" 
-                        groups="account.group_analytic_id" 
+                        groups="analytic.group_analytic_accounting" 
                         />
                 <field name="analytic_tag_ids" 
                         groups="analytic.group_analytic_tags" 

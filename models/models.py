@@ -29,7 +29,7 @@ class Orderpurchase(models.Model):
 
 			for y in x.env['stock.picking'].search([('origin','=', x.name),('picking_type_code','=','incoming')]):
 				y.move_lines.account_analytic_id = x.order_line.account_analytic_id
-				# y.move_lines.analytic_tag_ids = x.order_line.analytic_tag_ids
-				# y.move_lines.bisnis = x.order_line.bisnis
+				y.move_lines.analytic_tag_ids = x.order_line.analytic_tag_ids
+				y.move_lines.bisnis = x.order_line.bisnis
 
 		return res
