@@ -25,7 +25,9 @@
                 'purchase',
                 'analytic',
                 'stock',
-                'account'
+                'account',
+                'analytic_tag_dimension',
+                'vit_rpq_po',
                 ],
 
     # always loaded
