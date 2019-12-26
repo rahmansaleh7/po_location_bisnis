@@ -16,6 +16,7 @@ class Po_location_bisnis(models.Model):
 							string='Bisnis', 
 							domain=[('analytic_dimension_id.name','=','BUSINESS')]
 							)
+	
 
 class Orderpurchase(models.Model):
 	_name = 'purchase.order'

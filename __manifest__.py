@@ -1,14 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "po_location_bisnis",
+    'name': "vit_po_location_bisnis",
 
     'summary': """
-        Short (1 phrase/line) summary of the module's purpose, used as
-        subtitle on modules listing or apps.openerp.com""",
+        Add Field Lokasi dan Bisnis di Line pada stock.picking
+        Install Addon vit_rpq_po first
+        """,
 
     'description': """
-        Long description of module's purpose
-    """,
+        Install Addon vit_rpq_po terlebih dahulu
+        (Add Unit
+        Add Lokasi - Bisnis pada purchase.order)""",
 
     'author': "Iqbal A - Vitraining",
     'website': "http://www.vitraining.com",
