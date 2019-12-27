@@ -27,9 +27,9 @@ class Orderpurchase(models.Model):
 
 		res = super(Orderpurchase, self).button_confirm()
 		for x in self:
-			for order in x.order_line.search([('order_id','=',x.id)]):
+			for order in x.order_line:
 				pick = x.env['stock.picking'].search([('origin','=', x.name),('picking_type_code','=','incoming')])
-				move = x.env['stock.move'].search([('picking_id','=', pick.id)])
+				move = x.env['stock.move'].search([('picking_id','=', pick.id),('product_id','=', order.product_id.id)])
 			
 				for m in move:
 					for y in pick :
